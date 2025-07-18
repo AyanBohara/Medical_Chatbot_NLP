@@ -1,124 +1,432 @@
 {
-   "intents":[
-      {
-         "tag":"greeting",
-         "patterns":[
-            "Hi there",
-            "How are you",
-            "Is anyone there?",
-            "Hey",
-            "Hola",
-            "Hello",
-            "Good day"
-         ],
-         "responses":[
-            "Hello, thanks for asking",
-            "Good to see you again",
-            "Hi there, how can I help?"
-         ],
-         "context":[
-            ""
-         ]
-      },
-      {
-         "tag":"goodbye",
-         "patterns":[
-            "Bye",
-            "See you later",
-            "Goodbye",
-            "Nice chatting to you, bye",
-            "Till next time"
-         ],
-         "responses":[
-            "See you!",
-            "Have a nice day",
-            "Bye! Come back again soon."
-         ],
-         "context":[
-            ""
-         ]
-      },
-      {
-         "tag":"thanks",
-         "patterns":[
-            "Thanks",
-            "Thank you",
-            "That's helpful",
-            "Awesome, thanks",
-            "Thanks for helping me"
-         ],
-         "responses":[
-            "Happy to help!",
-            "Any time!",
-            "My pleasure"
-         ],
-         "context":[
-            ""
-         ]
-      },
-      {
-         "tag":"noanswer",
-         "patterns":[
-            
-         ],
-         "responses":[
-            "Sorry, can't understand you",
-            "Please give me more info",
-            "Not sure I understand"
-         ],
-         "context":[
-            ""
-         ]
-      },
-      {
-         "tag":"options",
-         "patterns":[
-            "How you could help me?",
-            "What you can do?",
-            "What help you provide?",
-            "How you can be helpful?",
-            "What support is offered"
-         ],
-         "responses":[
-            "I am a personal assistant of Balaji Srinivasan and I am a Python fan",
-            "I am a Python fanboy and a subscriber of Balaji Srinivasan's YouTube channel"
-         ],
-         "context":[
-            ""
-         ]
-      },
-      {
-         "tag":"python_is_best",
-         "patterns":[
-            "Which is the best programming language?",
-            "Can you tell me the best language ever?",
-            "What language can I start for programming",
-            "Is Python language an awesome language?",
-            "I am a beginner and I need to learn a new language"
-         ],
-         "responses":[
-            "Without a doubt, Python is the most BEAUTIFUL language ever! You can start learning it anytime",
-            "I am a fan of Python. It's my favorite ever. If you don't believe me, try it yourself"
-         ],
-         "context":[
-            ""
-         ]
-      },
-      {
-         "tag":"joke",
-         "patterns":[
-            "tell me a joke",
-            "can you tell me a joke",
-            "make some fun",
-            "make me laugh and do some funny joke",
-            "tell me a joke"
-         ],
-         "responses":[
-            "How do functions break up? \n They stop calling each other."
-         ],
-         "context":[
-            ""
-         ]
-      }
-   ]
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "What's up"
+      ],
+      "responses": [
+        "Hey there! How can I help you today?",
+        "Hi! Got any questions about breast cancer?",
+        "Hello! I am here to assist you."
+      ]
+    },
+    {
+      "tag": "what_is_breast_cancer",
+      "patterns": [
+        "What is breast cancer?",
+        "Can you explain breast cancer?",
+        "Tell me about breast cancer"
+      ],
+      "responses": [
+        "Breast cancer is when cells in the breast grow uncontrollably. It can start in different parts of the breast, and if not treated early, it may spread to other areas of the body."
+      ]
+    },
+    {
+      "tag": "how_does_breast_cancer_spread",
+      "patterns": [
+        "How does breast cancer spread?",
+        "How does breast cancer infect the body?",
+        "Where does breast cancer start?"
+      ],
+      "responses": [
+        "Breast cancer usually starts in the ducts or lobules of the breast. If not caught early, it can spread to nearby lymph nodes, bones, or other organs through the bloodstream or lymphatic system."
+      ]
+    },
+    {
+      "tag": "symptoms_of_breast_cancer",
+      "patterns": [
+        "What are the symptoms of breast cancer?",
+        "Symptoms of breast cancer",
+        "How do I know if I have breast cancer?",
+        "Signs of breast cancer"
+      ],
+      "responses": [
+        "Common symptoms of breast cancer include a lump in the breast or underarm, nipple discharge, skin dimpling, breast pain, or changes in breast shape or size. If anything feels unusual, consult a doctor immediately."
+      ]
+    },
+    {
+      "tag": "early_detection_of_breast_cancer",
+      "patterns": [
+        "How can I detect breast cancer early?",
+        "Early detection of breast cancer",
+        "Is there a way to know if I have breast cancer early?",
+        "How to catch breast cancer early?"
+      ],
+      "responses": [
+        "Early detection of breast cancer is possible with regular self-exams, clinical breast exams, and mammograms. Our platform uses ML models like SVM and Logistic Regression to assist in early predictions. But don’t skip consulting a doctor!"
+      ]
+    },
+    {
+      "tag": "prevention_of_breast_cancer",
+      "patterns": [
+        "How can I prevent breast cancer?",
+        "Prevention of breast cancer",
+        "How to reduce the risk of breast cancer?",
+        "Tips to avoid getting breast cancer"
+      ],
+      "responses": [
+        "While breast cancer can’t be completely prevented, you can lower your risk by maintaining a healthy lifestyle, avoiding alcohol and smoking, staying active, and getting regular screenings."
+      ]
+    },
+    {
+      "tag": "reaction_to_breast_cancer",
+      "patterns": [
+        "What happens if someone gets breast cancer?",
+        "How does the body react to breast cancer?",
+        "What’s it like to have breast cancer?"
+      ],
+      "responses": [
+        "People may experience physical symptoms like fatigue, pain, and emotional responses such as fear or sadness. The body’s reaction depends on the stage and type of breast cancer, as well as the treatment being used."
+      ]
+    },
+    {
+      "tag": "treatment_options_for_breast_cancer",
+      "patterns": [
+        "What are the treatments for breast cancer?",
+        "How is breast cancer treated?",
+        "Is there a cure for breast cancer?"
+      ],
+      "responses": [
+        "Treatment for breast cancer may include surgery, radiation therapy, chemotherapy, hormone therapy, or targeted therapy. The best option depends on the type and stage of breast cancer."
+      ]
+    },
+    {
+      "tag": "support_for_breast_cancer",
+      "patterns": [
+        "Where can I get support for breast cancer?",
+        "Any help groups for breast cancer?",
+        "I need someone to talk to about breast cancer"
+      ],
+      "responses": [
+        "You're not alone. Many support groups and communities are available for breast cancer patients and survivors. Talking to friends, therapists, or joining online groups can help a lot."
+      ]
+    },
+    {
+      "tag": "causes_of_breast_cancer",
+      "patterns": [
+        "What causes breast cancer?",
+        "Why do people get breast cancer?",
+        "Causes of breast cancer"
+      ],
+      "responses": [
+        "Breast cancer can be caused by genetic factors, hormonal imbalances, age, or lifestyle choices. Sometimes, the cause is unknown. Family history and certain mutations like BRCA1/BRCA2 increase the risk."
+      ]
+    },
+    {
+      "tag": "can_men_get_breast_cancer",
+      "patterns": [
+        "Can men get breast cancer?",
+        "Do boys get breast cancer?",
+        "Can guys also have breast cancer?"
+      ],
+      "responses": [
+        "Yes, men can get breast cancer too. It's rare, but it happens. If a man notices a lump or unusual changes in his chest area, he should get checked by a doctor."
+      ]
+    },
+    {
+      "tag": "risk_factors_for_breast_cancer",
+      "patterns": [
+        "Who is at risk of breast cancer?",
+        "Am I at risk of breast cancer?",
+        "What increases the risk of breast cancer?"
+      ],
+      "responses": [
+        "Risk factors for breast cancer include age, family history, unhealthy lifestyle, hormonal factors, and certain genetic mutations. But even without risk factors, regular screenings are still important."
+      ]
+    },
+    {
+      "tag": "screening_for_breast_cancer",
+      "patterns": [
+        "How do I screen for breast cancer?",
+        "What is a breast cancer screening?",
+        "What is a mammogram for breast cancer?"
+      ],
+      "responses": [
+        "Screening for breast cancer includes self-exams, clinical breast exams, and mammograms. Mammograms are low-dose X-rays that can detect lumps before you feel them."
+      ]
+    },
+    {
+      "tag": "lifestyle_tips_for_breast_cancer",
+      "patterns": [
+        "How to stay healthy and avoid breast cancer?",
+        "Healthy habits to prevent breast cancer?",
+        "Lifestyle tips for breast cancer prevention"
+      ],
+      "responses": [
+        "Maintain a healthy diet, stay active, avoid tobacco and alcohol, and reduce stress. Regular medical checkups are key in maintaining breast health."
+      ]
+    },
+    {
+      "tag": "compare_benign_and_malignant",
+      "patterns": [
+        "Compare benign and malignant tumors",
+        "What’s the difference between benign and malignant in breast cancer?",
+        "How are benign and malignant tumors different?"
+      ],
+      "responses": [
+        "Benign tumors are non-cancerous and don’t usually spread. Malignant tumors are cancerous, grow aggressively, and can invade other parts of the body. Malignant tumors are more dangerous."
+      ]
+    },
+    {
+      "tag": "how_malignant_is_worse_than_benign",
+      "patterns": [
+        "How is malignant tumor worse than benign in breast cancer?",
+        "Why is malignant breast cancer more dangerous?",
+        "Is malignant more infectious than benign?"
+      ],
+      "responses": [
+        "Malignant breast cancer is more dangerous because it can grow rapidly, invade nearby tissues, and spread to other organs. Benign tumors don’t spread and are easier to treat."
+      ]
+    },
+    {
+      "tag": "how_to_cure_benign",
+      "patterns": [
+        "How to cure benign breast tumor?",
+        "What’s the treatment for benign tumor?",
+        "Can benign tumor be removed?"
+      ],
+      "responses": [
+        "Benign tumors may not need treatment unless they cause discomfort. If necessary, they can be removed surgically. Regular monitoring by a doctor is recommended."
+      ]
+    },
+    {
+      "tag": "how_to_cure_malignant",
+      "patterns": [
+        "How to cure malignant breast cancer?",
+        "Can malignant breast cancer be cured?",
+        "What’s the treatment for malignant breast tumor?"
+      ],
+      "responses": [
+        "Malignant breast cancer is usually treated with surgery, chemotherapy, radiation, hormone therapy, or targeted therapy. Early detection and medical care are essential."
+      ]
+    },
+    {
+      "tag": "how_to_prevent_spread_of_malignant",
+      "patterns": [
+        "How to prevent malignant breast cancer from spreading?",
+        "How to stop the spread of malignant tumor?",
+        "What to do to slow down malignant breast cancer?"
+      ],
+      "responses": [
+        "To prevent malignant breast cancer from spreading, follow your doctor’s treatment plan strictly, get regular checkups, and maintain a healthy lifestyle. Early detection plays a huge role in preventing spread."
+      ]
+    },
+    {
+      "tag": "what_is_lung_cancer",
+      "patterns": [
+        "What is lung cancer?",
+        "Can you explain lung cancer?",
+        "Tell me about lung cancer"
+      ],
+      "responses": [
+        "Lung cancer happens when abnormal cells grow uncontrollably in the lungs. It often starts in the lining of the airways and may spread to other parts of the body if not treated."
+      ]
+    },
+    {
+      "tag": "causes_of_lung_cancer",
+      "patterns": [
+        "What causes lung cancer?",
+        "Why do people get lung cancer?",
+        "Causes of lung cancer"
+      ],
+      "responses": [
+        "The major cause of lung cancer is smoking, but exposure to secondhand smoke, pollutants, and genetic factors can also increase the risk."
+      ]
+    },
+    {
+      "tag": "symptoms_of_lung_cancer",
+      "patterns": [
+        "What are the symptoms of lung cancer?",
+        "Symptoms of lung cancer",
+        "How do I know if I have lung cancer?",
+        "Signs of lung cancer"
+      ],
+      "responses": [
+        "Common symptoms include a persistent cough, chest pain, shortness of breath, weight loss, and coughing up blood. If you notice these symptoms, see a doctor."
+      ]
+    },
+    {
+      "tag": "early_detection_of_lung_cancer",
+      "patterns": [
+        "How can I detect lung cancer early?",
+        "Early detection of lung cancer",
+        "Is there a way to know if I have lung cancer early?",
+        "How to catch lung cancer early?"
+      ],
+      "responses": [
+        "Low-dose CT scans are often used for early detection in high-risk people, like smokers. Early detection greatly improves treatment outcomes."
+      ]
+    },
+    {
+      "tag": "treatment_options_for_lung_cancer",
+      "patterns": [
+        "What are the treatments for lung cancer?",
+        "How is lung cancer treated?",
+        "Is there a cure for lung cancer?"
+      ],
+      "responses": [
+        "Treatment may include surgery, chemotherapy, radiation therapy, targeted therapy, or immunotherapy depending on the stage and type of lung cancer."
+      ]
+    },
+    {
+      "tag": "what_is_blood_pressure",
+      "patterns": [
+        "What is blood pressure?",
+        "Explain blood pressure",
+        "Tell me about blood pressure"
+      ],
+      "responses": [
+        "Blood pressure is the force of your blood pushing against artery walls as your heart pumps. It's shown in two numbers: systolic (top) and diastolic (bottom)."
+      ]
+    },
+    {
+      "tag": "what_is_high_blood_pressure",
+      "patterns": [
+        "What is high blood pressure?",
+        "Tell me about hypertension",
+        "What does high BP mean?"
+      ],
+      "responses": [
+        "High blood pressure (hypertension) means your blood pressure is consistently too high. It can silently damage your arteries and lead to heart disease, stroke, and more.",
+        "To prevent high blood pressure: Eat a low-sodium diet, exercise regularly, reduce alcohol, quit smoking, and manage stress.",
+        "Treatment may involve medications like ACE inhibitors, beta blockers, or diuretics, and lifestyle changes such as a healthy diet and regular physical activity."
+      ]
+    },
+    {
+      "tag": "symptoms_of_high_blood_pressure",
+      "patterns": [
+        "Symptoms of high blood pressure?",
+        "What does high BP feel like?",
+        "How do I know if I have hypertension?"
+      ],
+      "responses": [
+        "High BP usually has no symptoms, but in some cases, you might feel headaches, nosebleeds, blurred vision, or chest pain. It’s often called a silent killer!"
+      ]
+    },
+    {
+      "tag": "what_is_low_blood_pressure",
+      "patterns": [
+        "What is low blood pressure?",
+        "Explain low BP",
+        "What does hypotension mean?"
+      ],
+      "responses": [
+        "Low blood pressure (hypotension) means the pressure in your arteries is lower than normal. It can cause dizziness, fainting, and fatigue if blood flow to organs is too low.",
+        "Prevent low BP by drinking water, eating small frequent meals, and avoiding long standing periods.",
+        "Treatment may include increasing salt intake (if advised), wearing compression stockings, and medications in serious cases."
+      ]
+    },
+    {
+      "tag": "symptoms_of_low_blood_pressure",
+      "patterns": [
+        "Symptoms of low blood pressure?",
+        "What does low BP feel like?",
+        "How do I know if I have hypotension?"
+      ],
+      "responses": [
+        "Symptoms of low BP can include lightheadedness, blurry vision, fatigue, nausea, cold hands and feet, and even fainting. If these happen regularly, talk to your doctor."
+      ]
+    },
+    {
+      "tag": "difference_between_high_and_low_blood_pressure",
+      "patterns": [
+        "What’s the difference between high and low blood pressure?",
+        "Compare hypertension and hypotension",
+        "High vs low BP"
+      ],
+      "responses": [
+        "High BP (hypertension) puts strain on your heart and arteries, increasing risk of heart disease. Low BP (hypotension) can cause dizziness and fainting due to poor blood flow. Both can be dangerous if unmanaged."
+      ]
+    },
+    {
+      "tag": "how_to_control_blood_pressure",
+      "patterns": [
+        "How can I control my blood pressure?",
+        "Tips for managing blood pressure?",
+        "How to keep BP normal?"
+      ],
+      "responses": [
+        "To manage blood pressure: eat healthy, stay active, manage stress, and get regular checkups. Whether it's high or low, lifestyle matters!"
+      ]
+    },
+    {
+      "tag": "what_is_diabetes",
+      "patterns": [
+        "What is diabetes?",
+        "Explain diabetes",
+        "What does high sugar mean?",
+        "Tell me about diabetes"
+      ],
+      "responses": [
+        "Diabetes is a chronic condition where your body can't properly regulate blood sugar (glucose) levels. It happens when your body doesn't produce enough insulin or doesn't use it effectively."
+      ]
+    },
+    {
+      "tag": "symptoms_of_diabetes",
+      "patterns": [
+        "What are the symptoms of diabetes?",
+        "Signs of diabetes?",
+        "How do I know if I have sugar?",
+        "Symptoms of high blood sugar"
+      ],
+      "responses": [
+        "Common symptoms of diabetes include frequent urination, extreme thirst, unexplained weight loss, blurry vision, fatigue, and slow-healing wounds. If you're experiencing these, get your sugar level checked!"
+      ]
+    },
+    {
+      "tag": "prevention_of_diabetes",
+      "patterns": [
+        "How can I prevent diabetes?",
+        "Tips to avoid sugar disease?",
+        "How to prevent high blood sugar?",
+        "Prevention of diabetes"
+      ],
+      "responses": [
+        "Maintain a healthy weight with regular exercise.",
+        "Eat a balanced diet low in sugar and processed carbs.",
+        "Avoid sugary drinks, and don't skip breakfast.",
+        "Get regular checkups to monitor your blood sugar levels."
+      ]
+    },
+    {
+      "tag": "out_of_scope",
+      "patterns": [
+        "123",
+        "What is 123",
+        "12345",
+        "What is 12345",
+        "What is the capital of France?",
+        "Who is the president of the USA?",
+        "Tell me a joke",
+        "What is the weather today?",
+        "How do I cook pasta?",
+        "What is cryptocurrency?",
+        "What is the stock market?",
+        "What is programming?",
+        "What is love?",
+        "How do I make pizza?",
+        "What is Java?",
+        "What is football?",
+        "What is AI?",
+        "What is a computer?",
+        "How do I drive a car?",
+        "What is the meaning of life?",
+        "How do I get to the airport?",
+        "What is the tallest mountain?",
+        "Who won the world cup?",
+        "What is the time?",
+        "How do I learn Spanish?"
+      ],
+      "responses": [
+        "Sorry, I don't understand.",
+        "I'm not sure how to answer that.",
+        "I don't have information about that."
+      ]
+    }
+  ]
 }
